@@ -79,21 +79,6 @@ BOOL CSharedStruct<StructType>::Acquire(char *Name)
       int err = GetLastError();
       return FALSE;
    }
-
-   // OK, if we're the first person to create this
-   // file mapping object
-   // we want to clear the ACL, so
-   // anyone else can access this object
-   //
-   // If we don't do this, and a service creates the file mapping
-   // User processes won't be able to access it.
-
-   // So, we set the DACL to NULL, which effectively
-   // grants Everyone All Access
-
-   // More complicated ACLs are left as an exercise for the reader
-   // (because I sure as hell can't figure them out!)
-
    SetNamedSecurityInfo(Name, SE_KERNEL_OBJECT, DACL_SECURITY_INFORMATION, 0, 0, (PACL) NULL, NULL);
 
    m_dwMaxDataSize = sizeof(StructType);
