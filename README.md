@@ -1,6 +1,8 @@
 # ShareDataBtwn2Processes
 Share data between two processes. Written in C++.
 
+Child process (childMain.cpp) is created and called by parent process (parentMain.cpp).
+
 Main source: <a href="https://www.codeproject.com/articles/1362/a-simple-wrapper-for-sharing-data-structures-betwe">A Simple Wrapper for Sharing Data Structures Between Processes</a>
 
 Other links:
