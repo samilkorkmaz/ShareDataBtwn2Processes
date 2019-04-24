@@ -1,4 +1,4 @@
-//Reference: https://www.codeproject.com/articles/1362/a-simple-wrapper-for-sharing-data-structures-betwe
+//Reference: http://read.pudn.com/downloads179/sourcecode/math/833872/Util/General/CSharedStruct.h__.htm
 #ifndef _SHARED_STRUCT_
 #define _SHARED_STRUCT_
 
